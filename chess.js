@@ -53,7 +53,8 @@ function buildBoardMarkup() {
     for (let c = 0; c < 8; c++) {
       const squareDiv = document.createElement("div");
       squareDiv.className = "square";
-      const lightSquare = (r + c) % 2 === 1;
+      //const lightSquare = (r + c) % 2 === 1;
+      const lightSquare = (r + c) % 2 === 0;
       if (lightSquare) squareDiv.classList.add("light");
       else squareDiv.classList.add("dark");
       squareDiv.setAttribute("id", `square-${indexToCoord(r, c)}`);

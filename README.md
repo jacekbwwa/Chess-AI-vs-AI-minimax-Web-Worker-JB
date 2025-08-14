@@ -30,7 +30,7 @@ https://jacekbwwa.github.io/Chess-AI-vs-AI-minimax-Web-Worker-JB/index.html
 #### Board description:
 - The board consists of 64 squares, alternating 32 dark and 32 light squares.
 - Each AI player starts the game with 16 chess pieces placed on the board: 1 king, 1 queen, 2 rooks, 2 bishops, 2 knights, and 8 pawns. One AI player has black pieces, and the other white pieces. The white piece moves first.
-- Pieces are represented on the board using HTML symbols.
+- The pieces on the board are represented by chess symbols.
  
 #### Buttons description:
 - “AI1 vs AI2” button – When pressed, the system initiates a chess game between two AI players (“AI1 vs AI2” mode).
@@ -59,14 +59,23 @@ https://jacekbwwa.github.io/Chess-AI-vs-AI-minimax-Web-Worker-JB/index.html
 ## Screenshot - the black king is in check
 ![Screenshot](screenshot3.png)
 
+## Screenshot - the white king is in check
+![Screenshot](screenshot3a.png)
+
+![Screenshot](screenshot3b.png)
+
 ## Screenshot - History button pressed
 ![Screenshot](screenshot4.png)
+
+![Screenshot](screenshot4a.png)
 
 ## Screenshot - the black king is in checkmate, the white player wins
 ![Screenshot](screenshot10.png)
 
 ## Screenshot - the white king is in checkmate, the black player wins
 ![Screenshot](screenshot16.png)
+
+![Screenshot](screenshot16a.png)
 
 ## Technologies Used
 - HTML/CSS
