@@ -89,14 +89,16 @@ function renderBoard(game) {
       const squareDiv = document.getElementById(squareId);
       if (!squareDiv) continue;
       const piece = game.board[r][c];
-      squareDiv.textContent = piece ? PIECES_SYMBOLS[piece] : "";
-      squareDiv.classList.remove("highlight", "check");
-      squareDiv.title = piece ? `${pieceName(piece)} (${isWhite(piece) ? "White" : "Black"})` : "";
+     // squareDiv.textContent = piece ? PIECES_SYMBOLS[piece] : "";
+     squareDiv.classList.remove("highlight", "check");
+     squareDiv.title = piece ? `${pieceName(piece)} (${isWhite(piece) ? "White" : "Black"})` : "";
       if (piece) {
         if (isWhite(piece)) {
+          squareDiv.innerHTML = `<img src="img/${"White"}-${piece}.png">`;
           squareDiv.style.color = "#f4fbff";
           squareDiv.style.fontWeight = "550";
         } else {
+          squareDiv.innerHTML = `<img src="img/${"Black"}-${piece}.png">`;
           squareDiv.style.color = "black";
           squareDiv.style.fontWeight = "550";
         }
